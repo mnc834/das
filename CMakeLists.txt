@@ -15,5 +15,7 @@ add_compile_options("$<$<CXX_COMPILER_ID:GNU>:${cxx_warning_options}>")
 # Treats warnings as errors
 set(CMAKE_COMPILE_WARNING_AS_ERROR ON)
 
+add_custom_target(readme SOURCES README)
+
 # Subdirectories
 add_subdirectory(main)
